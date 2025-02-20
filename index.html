@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>Little Fashion</title>
   </head>
-  
   <body>
     <header>
       <nav class="contanier">
@@ -27,9 +26,6 @@
             <p class="hidden">____</p>
             <p class="end-line lines">____</p>
           </div>
-
-
-          <!-- <i id="mobile-icon" class="fa-solid fa-align-justify"></i> -->
           <i id="close-icon" class="fa-solid fa-xmark"></i>
           <ul id="nav-list">
             <li><a href="#" class="active">Home</a></li>
@@ -53,12 +49,21 @@
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="icons">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-moon" data-theme="0" id="dark-mode"></i>
+          <i class="fa-regular fa-user" id="toggle-sign-in"></i>
           <i class="fa-solid fa-briefcase"></i>
         </div>
       </nav>
     </header>
+    <div class="sign-in">
+      <h3>Sign In</h3>
+      <label for="email"></label>
+      <input type="email" placeholder="  email">
+      <label for="password"></label>
+      <input type="password" placeholder="  password">
+      <button>Sing In</button>
+      <p>Don’t have an account ? <a href="#">Create One</a> </p>
+    </div>
 
     <section  class="content  spacing">
       <div class="swiper">

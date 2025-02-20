@@ -38,8 +38,21 @@ about.forEach(e => {
     })  
 });
 
+const darkMode = document.getElementById('dark-mode');
+const body = document.querySelector('body');
+const header = document.querySelector('header');
+darkMode.addEventListener('click', function () {
+    let currentTheme = body.getAttribute('data-theme');
+    let newTheme = currentTheme === '1' ? '0' : '1';
+    body.setAttribute('data-theme', newTheme);
+    header.setAttribute('data-theme', newTheme);
+});
 
-
+const signIn = document.querySelector('.sign-in');
+const toggleSignIn = document.getElementById('toggle-sign-in');
+toggleSignIn.addEventListener('click', function () {
+    signIn.classList.toggle('active');
+});
 
 
 
